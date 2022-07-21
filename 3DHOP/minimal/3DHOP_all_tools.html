@@ -234,6 +234,12 @@ function onEndPick(point) {
 } 
 //--PICKPOINT--	
 
+function onPickedSpt(id) {
+  switch(id) {
+   case 'Sphere' : showPanel('info_panel_vertical'); setInfo(id); break; 
+  }
+}
+
 $(document).ready(function(){
 	init3dhop();
 
